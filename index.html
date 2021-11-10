@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="title">
+        <h1 class="title__content">Actions List</h1>
+    </div>
+    <div class="boxes">
+        <div class="box">
+            <div class="create">
+                <form id="form" action="./index.html" onsubmit="save_data()">
+                    <input type="text" id="content" name="content" size="35" placeholder="What are you up to?" required="">
+                    <button type="submit" id="submit__button" value="submit">✓</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="current">
+                <h2 id="current__title">Your To-do List 🚀</h2>
+                <div id="current-tasks" class="tasks">
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="completed">
+                <h2 id="completed__title">Completed Missions 🔥</h2>
+                <div id="completed-tasks" class="tasks"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
